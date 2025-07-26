@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		14ACE551D0C211DA9B1686E7 /* Pods_BayarLuu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6AAA5082864626B0E3DB4E /* Pods_BayarLuu.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		039DFC2D2E21EFA7002EAE48 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,9 @@
 		039DFC132E21EFA5002EAE48 /* BayarLuu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BayarLuu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		039DFC2C2E21EFA7002EAE48 /* BayarLuuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BayarLuuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		039DFC362E21EFA7002EAE48 /* BayarLuuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BayarLuuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		501F08BFACFC6FF11F3E414B /* Pods-BayarLuu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BayarLuu.debug.xcconfig"; path = "Target Support Files/Pods-BayarLuu/Pods-BayarLuu.debug.xcconfig"; sourceTree = "<group>"; };
+		8D6AAA5082864626B0E3DB4E /* Pods_BayarLuu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BayarLuu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B41894DDBA2DAEBF0C48D217 /* Pods-BayarLuu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BayarLuu.release.xcconfig"; path = "Target Support Files/Pods-BayarLuu/Pods-BayarLuu.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -65,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14ACE551D0C211DA9B1686E7 /* Pods_BayarLuu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +100,8 @@
 				039DFC2F2E21EFA7002EAE48 /* BayarLuuTests */,
 				039DFC392E21EFA7002EAE48 /* BayarLuuUITests */,
 				039DFC142E21EFA5002EAE48 /* Products */,
+				BC2F6246B9676493E81510D4 /* Pods */,
+				41E1EC21E9323F2490280578 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +115,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		41E1EC21E9323F2490280578 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D6AAA5082864626B0E3DB4E /* Pods_BayarLuu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC2F6246B9676493E81510D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				501F08BFACFC6FF11F3E414B /* Pods-BayarLuu.debug.xcconfig */,
+				B41894DDBA2DAEBF0C48D217 /* Pods-BayarLuu.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 039DFC3F2E21EFA7002EAE48 /* Build configuration list for PBXNativeTarget "BayarLuu" */;
 			buildPhases = (
+				784ED5704BEEA7AB183D0704 /* [CP] Check Pods Manifest.lock */,
 				039DFC0F2E21EFA5002EAE48 /* Sources */,
 				039DFC102E21EFA5002EAE48 /* Frameworks */,
 				039DFC112E21EFA5002EAE48 /* Resources */,
+				449EE2ED4567B72C7C9E9FBC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,8 +153,6 @@
 				039DFC152E21EFA5002EAE48 /* BayarLuu */,
 			);
 			name = BayarLuu;
-			packageProductDependencies = (
-			);
 			productName = BayarLuu;
 			productReference = 039DFC132E21EFA5002EAE48 /* BayarLuu.app */;
 			productType = "com.apple.product-type.application";
@@ -147,8 +174,6 @@
 				039DFC2F2E21EFA7002EAE48 /* BayarLuuTests */,
 			);
 			name = BayarLuuTests;
-			packageProductDependencies = (
-			);
 			productName = BayarLuuTests;
 			productReference = 039DFC2C2E21EFA7002EAE48 /* BayarLuuTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -170,8 +195,6 @@
 				039DFC392E21EFA7002EAE48 /* BayarLuuUITests */,
 			);
 			name = BayarLuuUITests;
-			packageProductDependencies = (
-			);
 			productName = BayarLuuUITests;
 			productReference = 039DFC362E21EFA7002EAE48 /* BayarLuuUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -244,6 +267,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		449EE2ED4567B72C7C9E9FBC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BayarLuu/Pods-BayarLuu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BayarLuu/Pods-BayarLuu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BayarLuu/Pods-BayarLuu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		784ED5704BEEA7AB183D0704 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BayarLuu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		039DFC0F2E21EFA5002EAE48 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -284,12 +353,14 @@
 /* Begin XCBuildConfiguration section */
 		039DFC402E21EFA7002EAE48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 501F08BFACFC6FF11F3E414B /* Pods-BayarLuu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NEQE3T33DN;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BayarLuu/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -297,6 +368,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,12 +384,14 @@
 		};
 		039DFC412E21EFA7002EAE48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B41894DDBA2DAEBF0C48D217 /* Pods-BayarLuu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NEQE3T33DN;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BayarLuu/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -325,6 +399,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
